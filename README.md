@@ -48,7 +48,7 @@ Assume you are an expert frontend developer, familiar with making datavizualizat
 
 # Sending a command
 
-```
+```typescript
 There is a package `@formant/data-sdk`
 
 it exports the following typescript interface for sending commands:
