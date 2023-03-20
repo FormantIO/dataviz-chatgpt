@@ -4,7 +4,7 @@ A collection of ChatGPT prompts to help accelerate building data visualizations 
 
 # Querying Data and Visualizing
 
-```
+```typescript
 There is a package `@formant/data-sdk`
 
 it exports the following typescript interface for query devices:
