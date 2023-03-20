@@ -5,15 +5,9 @@ A collection of ChatGPT prompts to help accelerate building data visualizations 
 # Querying Data and Visualizing
 
 ```
-```
-
-
-# Sending a command
-
-```
 There is a package `@formant/data-sdk`
 
-it exports the following typescript interface:
+it exports the following typescript interface for query devices:
 
 export StreamType = "numeric" | "text"
 
@@ -47,6 +41,31 @@ export interface Authorization {
 }
 
 Assume you are an expert frontend developer, familiar with making datavizualizations using `react`.  Before you call query functions on `@formant/data-sdk`, there's an authorzation function you must call first:
+
+`await Authorization.waitTilAutheneticated()`
+```
+
+
+# Sending a command
+
+```
+There is a package `@formant/data-sdk`
+
+it exports the following typescript interface for sending commands:
+
+export interface Device {
+  sendCommand():Promise<void>
+}
+
+export interface Fleet {
+  getDevice(deviceId:string) : Promise<Device>
+}
+
+export interface Authorization {
+  waitTilAuthenticated(): Promise<void>
+}
+
+Assume you are an expert frontend developer, familiar with making datavizualizations using `react`.  Before you send a command using `@formant/data-sdk`, there's an authorzation function you must call first:
 
 `await Authorization.waitTilAutheneticated()`
 ```
