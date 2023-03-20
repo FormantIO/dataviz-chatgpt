@@ -54,7 +54,7 @@ There is a package `@formant/data-sdk`
 it exports the following typescript interface for sending commands:
 
 export interface Device {
-  sendCommand():Promise<void>
+  sendCommand(text:string):Promise<void>
 }
 
 export interface Fleet {
